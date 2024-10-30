@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="Task5.cssS">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="Task8.css">
 </head>
 <body>
     <div class="container">
-        <h1>Currency Converter</h1>
-        <div class="converter-box">
-
-            <div class="input-container">
-              <select id="fromCountry"></select>
-              <input type="number" id="amount" placeholder="Enter Amount">
-            </div>
-
-            <button id="convertBtn">Convert</button>
-
-            <div class="output-container">
-              <select id="toCountry"></select>
-              <div class="result-box">
-                <p id="result"></p>
-            </div>
-            
+        <h1>BMI Calculator</h1>
+        <div class="input-container">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight in kg" step="0.1" required>
         </div>
+        <div class="input-container">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height in cm" step="0.1" required>
+        </div>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div id="result" class="result"></div>
     </div>
-    <script src="Task5.js"></script>
+    <script src="Task8.js"></script>
 </body>
 </html>
